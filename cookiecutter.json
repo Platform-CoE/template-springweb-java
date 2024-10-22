@@ -5,7 +5,7 @@
     "github_repo_owner": "sunghwan-joo",
     "k8s_namespace" : "sample-namespace",
     "argocd_ip" : "127.0.0.1",
-    "acr_name": "ktds-acr",
+    "acr_name": "ktdsacr",
     "image_name" : "sample-image",
     "argocd_app_name": "sample-argocd_app_name"
 }
