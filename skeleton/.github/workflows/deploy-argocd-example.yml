@@ -54,7 +54,7 @@ jobs:
 
       - name: Get AKS credentials
         run: | 
-          az aks get-credentials --resource-group rg-demo --name aks-idp-demo --overwrite-existing
+          az aks get-credentials --resource-group rg-idp --name aks-idp-demo --overwrite-existing
 
       - name: Install ArgoCD CLI
         run: |
