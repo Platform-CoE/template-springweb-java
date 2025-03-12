@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://{{ cookiecutter.dev_db_host }}:{{ cookiecutter.dev_db_port }}/{{ cookiecutter.dev_db_name }}
+    username: {{ cookiecutter.dev_db_user }}
+    password: dev_db_password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
