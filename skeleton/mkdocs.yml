@@ -1,14 +1,11 @@
-site_name: {{ cookiecutter.project_name }}
+site_name: {{ cookiecutter.project_name }} documentation
 nav:
   - Home: index.md
-  - Download Example: examples/download.md
-  - Iframe Example: examples/iframe.md
-  - Lists Example: examples/lists.md
-  - Mermaid Example: examples/mermaid.md
-  - Plugin Example: examples/plugin.md
-  - Product Example: examples/product.md
-docs_dir: backstage/docs
+#   - 페이지명: example/md파일경로.md
+  - Catalog yaml 작성 및 등록 가이드: pages/catalog-guide.md
+
+docs_dir: idp/docs
 plugins:
   - techdocs-core
 markdown_extensions:
-  - admonition  # 추가할 Markdown 확장
+  - admonition  
