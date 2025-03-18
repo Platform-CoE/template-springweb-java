@@ -1,11 +1,13 @@
 {
-    "project_name": "example-java-app",
-    "package_name": "com.example.app",
-    "github_repo_name": "example",
-    "github_repo_owner": "sunghwan-joo",
+    "project_name": "spring-project-example",
+    "project_description": "Spring boot application template",
+    "project_version": "1.0.0",
+    "project_author": "Platform-CoE",
+    "github_repo_name": "spring-project-example",
+    "github_repo_owner": "Platform-CoE",
     "dev_db_host": "127.0.0.1",
     "dev_db_port": "5432",
-    "dev_db_name": "postgres",
+    "dev_db_name": "spring_dev",
     "dev_db_user": "postgres",
     "dev_db_password": "postgres"
-}
+} 
