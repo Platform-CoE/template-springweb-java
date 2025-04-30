@@ -1,0 +1,69 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.4'
+    id 'io.spring.dependency-management' version '1.1.4'
+    id 'io.freefair.lombok' version '8.4'
+}
+
+group = '{{ cookiecutter.package_name }}'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    set('mybatisVersion', '3.0.3')
+    set('mapstructVersion', '1.5.5.Final')
+    set('querydslVersion', '5.0.0')
+    set('awsSdkVersion', '2.26.3')
+    set('azureSdkVersion', '5.14.0')
+}
+
+dependencies {
+    // Spring Boot Starters
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+
+    // MyBatis
+    implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatisVersion}"
+
+    // Database
+    runtimeOnly 'org.postgresql:postgresql'
+
+    // Utilities
+    implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:1.4.7'
+    implementation "org.mapstruct:mapstruct:${mapstructVersion}"
+    implementation 'org.apache.poi:poi:5.2.5'
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.3'
+
+    // QueryDSL
+    implementation "com.querydsl:querydsl-core:${querydslVersion}"
+
+    // AWS SDK
+    implementation platform("software.amazon.awssdk:bom:${awsSdkVersion}")
+
+    // Azure SDK
+    implementation platform("com.azure.spring:spring-cloud-azure-dependencies:${azureSdkVersion}")
+
+    // Annotation Processors
+    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+    annotationProcessor "com.querydsl:querydsl-apt:${querydslVersion}:jpa"
+
+    // Test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+} 

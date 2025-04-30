@@ -16,9 +16,8 @@
 com.kt.{{ cookiecutter.package_name }}/
 ├── common/                    # 공통 기능
 │   ├── exception/            # 예외 처리
-│   ├── model/                # 공통 도메인 모델 (선택사항)
 │   └── dto/                  # 공통 DTO (선택사항)
-├── sampleUser/               # 업무 단위 패키지 샘플
+├── sampleUser/               # 샘플 업무 단위 패키지
 │   ├── config/              # 설정
 │   ├── controller/          # API 컨트롤러
 │   ├── dto/                 # 데이터 전송 객체
