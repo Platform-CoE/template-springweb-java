@@ -10,3 +10,9 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+logging:
+  level:
+    {{ cookiecutter.package_name }}: DEBUG
+      org.springframework: DEBUG
+      org.mybatis: DEBUG 

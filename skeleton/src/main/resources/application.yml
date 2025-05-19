@@ -4,8 +4,8 @@ spring:
   application:
     name: {{ cookiecutter.project_name }}
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/your_database?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/your_database
     username: your_username
     password: your_password
   sql:
@@ -14,10 +14,6 @@ spring:
       schema-locations: classpath:conf/db/schema.sql
       data-locations: classpath:conf/db/data.sql
 
-mybatis:
-  config-location: classpath:conf/mybatis/mybatis-config.xml
-  mapper-locations: classpath:conf/mybatis/mappers/{{ cookiecutter.package_name }}/**/*.xml
-  type-aliases-package: com.kt.{{ cookiecutter.package_name }}.sampleUser.model
 
 server:
   port: 8080
