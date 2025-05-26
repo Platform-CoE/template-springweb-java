@@ -1,5 +1,8 @@
 package com.kt.{{ cookiecutter.package_name }}.common.exception;
 
+import com.kt.{{ cookiecutter.package_name }}.common.exception.ErrorCode;
+import com.kt.{{ cookiecutter.package_name }}.common.exception.CustomException;
+
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

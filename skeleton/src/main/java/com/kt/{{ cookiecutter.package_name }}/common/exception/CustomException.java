@@ -1,5 +1,6 @@
 package com.kt.{{ cookiecutter.package_name }}.common.exception;
 
+import com.kt.{{ cookiecutter.package_name }}.common.exception.code.ErrorCode;
 import lombok.Getter;
 
 @Getter

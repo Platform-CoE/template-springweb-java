@@ -1,4 +1,4 @@
-package com.kt.{{ cookiecutter.package_name }}.exampleUser.config;
+package com.kt.{{ cookiecutter.package_name }}.common.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -19,4 +19,4 @@ public class SwaggerConfig {
                                 .name("Apache 2.0")
                                 .url("http://www.apache.org/licenses/LICENSE-2.0")));
     }
-} 
+}
