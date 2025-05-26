@@ -2,6 +2,7 @@ HELP.md
 target/
 !**/src/main/**/target/
 !**/src/test/**/target/
+!.gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
 .apt_generated
@@ -35,4 +36,4 @@ src/.DS_Store
 .DS_Store
 .DS_Store
 
-!.gradle/wrapper/gradle-wrapper.jar
+
