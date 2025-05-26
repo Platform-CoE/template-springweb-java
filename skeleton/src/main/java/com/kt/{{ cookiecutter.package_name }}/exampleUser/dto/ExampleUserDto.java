@@ -1,4 +1,4 @@
-package {{ cookiecutter.package_name }}.dto;
+package com.kt.{{ cookiecutter.package_name }}.exampleUser.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

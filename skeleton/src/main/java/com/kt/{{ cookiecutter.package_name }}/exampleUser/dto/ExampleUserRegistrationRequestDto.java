@@ -1,4 +1,4 @@
-package {{ cookiecutter.package_name }}.dto;
+package com.kt.{{ cookiecutter.package_name }}.exampleUser.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -24,4 +24,4 @@ public class ExampleUserRegistrationRequestDto {
     @NotBlank(message = "이메일은 필수입니다.")
     @Email(message = "유효한 이메일 주소를 입력해주세요.")
     private String email;
-} 
+}
