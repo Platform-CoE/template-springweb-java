@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ExampleUserDto {
+    
     @Schema(description = "사용자 ID")
     private Long id;
 
