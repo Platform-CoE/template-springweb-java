@@ -1,15 +1,12 @@
 {
     "owner": "user:guest",
-    "package_name": "Example",
+    "package_name": "example",
     "project_name": "SpringProjectTemplate",
     "project_description": "Spring boot application template",
-    "project_version": "1.0.0",
-    "project_author": "Platform-CoE",
+    "github_org": "Platform-CoE",
     "github_repo_name": "Spring_Project_Example",
-    "github_repo_owner": "Platform-CoE",
-    "dev_db_host": "127.0.0.1",
-    "dev_db_port": "5432",
-    "dev_db_name": "spring_dev",
+    "dev_db_url": "127.0.0.1",
+    "dev_db_name": "postgres",
     "dev_db_user": "postgres",
-    "dev_db_password": "postgres"
+    "system_name": "SAMPLE"
 } 
